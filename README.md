@@ -37,7 +37,7 @@ Publication roadmap and materials for **HumanBrain: GPU-Accelerated Whole-Brain 
 Source code: [github.com/Yatrogenesis/HumanBrain](https://github.com/Yatrogenesis/HumanBrain)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17720778.svg)](https://doi.org/10.5281/zenodo.17720778)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Yatrogenesis/HumanBrain/blob/master/LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey.svg)](LICENSE)
 
 ## arXiv Submission
 
@@ -72,7 +72,7 @@ Formats: PDF (vector), EPS (vector), PNG (600 DPI raster)
 
 ## License
 
-All papers: CC-BY-4.0 | Source code: MIT License
+Papers, figures and text in this repository: **CC-BY-4.0** (see `LICENSE`). The simulator source code is not in this repository; it lives in [Yatrogenesis/HumanBrain](https://github.com/Yatrogenesis/HumanBrain) and is licensed under AGPL-3.0-or-later.
 
 ## Contact
 
