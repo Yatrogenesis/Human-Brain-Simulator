@@ -1,6 +1,6 @@
 \documentclass{article}
 
-% arXiv preprint setup
+% Preprint draft setup
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -15,8 +15,8 @@
 \title{HumanBrain: GPU-Accelerated Whole-Brain Simulator with Anatomical Connectivity and Adaptive Feedback Control}
 
 \author{
-    Francisco Molina Burgos \
-    \texttt{pako.molina@gmail.com} \
+    Francisco Molina Burgos \\
+    \texttt{pako.molina@gmail.com} \\
     ORCID: 0009-0008-6093-8267
 }
 
@@ -27,7 +27,7 @@
 \maketitle
 
 \begin{abstract}
-We present HumanBrain, a novel GPU-accelerated computational framework for whole-brain simulation that integrates multi-compartmental cable equation physics, anatomically validated connectivity, and adaptive feedback control. Unlike existing simulators that prioritize either biological detail or computational performance, HumanBrain achieves both through: (1) wgpu compute shaders implementing 152-compartment cable equation on GPU (1.52M compartments total for 10K neurons), (2) eight biologically validated inter-regional pathways including thalamocortical, corticothalamic, corticostriatal, and hippocampal-cortical connections, and (3) a hybrid CPU-GPU adaptive feedback loop that performs real-time attractor analysis and homeostatic parameter modulation. We demonstrate near real-time performance (50-80 FPS) on consumer hardware (NVIDIA RTX 3050) while maintaining biological accuracy score of 8.5/10. The system successfully reproduces known phenomena including hippocampal place cells, basal ganglia action selection, and thalamic burst/tonic mode transitions. HumanBrain is open-source (MIT license) and provides a foundation for large-scale computational neuroscience research requiring both biological fidelity and computational tractability.
+We present HumanBrain, a GPU-accelerated computational framework for whole-brain simulation exploring multi-compartmental cable equation physics, literature-referenced anatomical connectivity, and adaptive feedback control. The framework implements: (1) wgpu compute shaders for 152-compartment cable equation dynamics on GPU (1.52M compartments total for 10K neurons), (2) eight literature-derived inter-regional pathways including thalamocortical, corticothalamic, corticostriatal, and hippocampal-cortical connections, and (3) a hybrid CPU-GPU feedback loop designed for attractor analysis and homeostatic modulation. Exploratory single-run profiles observe frame rates of ~50-80 FPS on consumer hardware (NVIDIA RTX 3050; formal reproducible benchmark suite pending). Implemented submodules provide structural prototypes for hippocampal place cells, basal ganglia action selection, and thalamic burst/tonic firing modes (unverified against experimental recordings). HumanBrain provides an open framework for computational neuroscience research.
 \end{abstract}
 
 \section{Introduction}

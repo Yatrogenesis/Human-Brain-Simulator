@@ -164,7 +164,7 @@ def fig2_brain_connectivity():
     ax.set_ylim(0, 1)
     ax.set_aspect('equal')
     ax.axis('off')
-    ax.set_title('Inter-Regional Connectivity (8 Anatomically Validated Pathways)',
+    ax.set_title('Inter-Regional Connectivity (8 Literature-Referenced Pathways)',
                  fontsize=12, fontweight='bold')
 
     plt.tight_layout()
@@ -314,7 +314,7 @@ def fig5_system_architecture():
 
     ax.set_title('HumanBrain System Architecture', fontsize=14, fontweight='bold', y=0.98)
 
-    perf_text = "Performance: 10K neurons @ 50-80 FPS\nRTX 3050 (4GB VRAM)"
+    perf_text = "Performance Target: 10K neurons (~50-80 FPS exploratory)\nRTX 3050 (benchmark unverified)"
     ax.text(10.5, 1.75, perf_text, ha='center', va='center', fontsize=9,
             bbox=dict(boxstyle='round', facecolor='lightyellow', alpha=0.9))
 
@@ -324,16 +324,17 @@ def fig5_system_architecture():
 
 
 def fig6_biological_accuracy():
-    """Biological accuracy comparison."""
+    """Biological accuracy comparison (illustrative, hand-entered values)."""
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
     models = ['HumanBrain', 'NEURON', 'Brian2', 'NEST']
+    # Illustrative, hand-entered values (not experimental benchmark results)
     spike_accuracy = [98.5, 99.2, 97.8, 96.5]
     colors = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6']
 
     bars = axes[0].bar(models, spike_accuracy, color=colors)
-    axes[0].set_ylabel('Spike Timing Accuracy (%)')
-    axes[0].set_title('Comparison with Established Simulators', fontweight='bold')
+    axes[0].set_ylabel('Spike Timing Accuracy (%) [Illustrative]')
+    axes[0].set_title('Illustrative Accuracy (Hand-Entered Values)', fontweight='bold')
     axes[0].set_ylim(90, 100)
     axes[0].grid(True, alpha=0.3, axis='y')
 
@@ -343,8 +344,8 @@ def fig6_biological_accuracy():
 
     parameters = ['Membrane\nCapacitance', 'Axial\nResistance', 'Resting\nPotential',
                   'AP\nAmplitude', 'Refractory\nPeriod']
-    literature_values = [1.0, 150, -70, 100, 2.0]
-    model_values = [1.0, 150, -70, 100, 2.0]
+    literature_values = [1.0, 150, -70, 100, 2.0]  # Standard literature reference values
+    model_values = [1.0, 150, -70, 100, 2.0]  # Model configuration parameters
 
     x = np.arange(len(parameters))
     width = 0.35
@@ -352,7 +353,7 @@ def fig6_biological_accuracy():
     axes[1].bar(x - width/2, literature_values, width, label='Literature', color='#3498DB', alpha=0.8)
     axes[1].bar(x + width/2, model_values, width, label='HumanBrain', color='#E74C3C', alpha=0.8)
     axes[1].set_ylabel('Normalized Value')
-    axes[1].set_title('Biological Parameter Validation', fontweight='bold')
+    axes[1].set_title('Biological Parameter Reference Comparison', fontweight='bold')
     axes[1].set_xticks(x)
     axes[1].set_xticklabels(parameters, fontsize=8)
     axes[1].legend()

@@ -7,8 +7,8 @@ Publication roadmap and materials for **HumanBrain: GPU-Accelerated Whole-Brain 
 ## Publication Roadmap
 
 ### Phase 1: Preprint (Week 1-2)
-- [x] arXiv submission (q-bio.NC - Neurons and Cognition)
-- [x] Zenodo DOI generation
+- [ ] Preprint draft preparation (q-bio.NC - Neurons and Cognition, not submitted)
+- [x] Zenodo archive entry: [10.5281/zenodo.17720778](https://doi.org/10.5281/zenodo.17720778)
 - [ ] bioRxiv submission (optional)
 
 **Target Date**: December 2025
@@ -39,12 +39,12 @@ Source code: [github.com/Yatrogenesis/HumanBrain](https://github.com/Yatrogenesi
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17720778.svg)](https://doi.org/10.5281/zenodo.17720778)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey.svg)](LICENSE)
 
-## arXiv Submission
+## Preprint Draft Materials
 
-The arXiv preprint is located in \ with:
+Preprint draft sources and figures are located in `papers/latex/` and `papers/exports/`:
 
-- \ - Full LaTeX source
-- \ - All figures in PDF/EPS/PNG format
+- `papers/latex/humanbrain_paper.tex` - Full LaTeX source
+- `papers/exports/` - Figures in PDF/EPS/PNG format
 - Compilation tested on Overleaf with pdfLaTeX
 
 **Category**: q-bio.NC (Neurons and Cognition)
@@ -53,9 +53,9 @@ The arXiv preprint is located in \ with:
 ## Key Contributions
 
 1. **GPU Cable Equation Integration**: 152 compartments/neuron, 1.52M total compartments for 10K neurons
-2. **Anatomical Connectivity**: 8 biologically validated pathways
-3. **Adaptive Feedback Loop**: Real-time attractor analysis
-4. **Performance**: Near real-time (50-80 FPS) on consumer GPU (RTX 3050)
+2. **Anatomical Connectivity**: 8 literature-referenced anatomical pathways
+3. **Adaptive Feedback Loop**: Attractor dynamics modulation
+4. **Performance Target**: Exploratory observation (~50-80 FPS for 10K neurons, unverified benchmark)
 
 ## Figures
 
